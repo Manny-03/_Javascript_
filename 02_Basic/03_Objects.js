@@ -24,10 +24,19 @@ console.log(typeof([mySym]));
 
 jsUser.email = "manas@yahoo.com";
 console.log(jsUser["email"]);
-Object.freeze(jsUser);   // This command freezes the object and don't allow further changes to occur
+// Object.freeze(jsUser);   // This command freezes the object and don't allow further changes to occur
 jsUser.email = "manas@chatgpt.com";
 console.log(jsUser);
 
-jsUser.greting = function(){
+jsUser.greeting = function(){
     console.log(`Hello ${jsUser["name"]} to JavaScript`);
 }
+
+console.log(jsUser.greeting);
+console.log(jsUser.greeting());
+
+
+jsUser.greeting2 = function(){
+    console.log(`Hello, ${this["full name"]}, Welcome to JavaScript`);
+}
+console.log(jsUser.greeting2());
