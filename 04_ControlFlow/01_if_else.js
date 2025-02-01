@@ -50,3 +50,11 @@ if(userLoggedIn && debitCard){
 }else{
     console.log("Not allowed for shopping");
 }
+
+const loggedInfromGoogle= false;
+const loggedInFromEmail = true;
+if(loggedInFromEmail || loggedInfromGoogle){
+    console.log("User logged in");
+}else{
+    console.log("User cannot login");
+}
