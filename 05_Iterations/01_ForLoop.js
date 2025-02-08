@@ -23,3 +23,23 @@ for(let i = 0; i < myArr.length; i++){
     const element = myArr[i];
     console.log(element);
 }
+
+//BREAK and CONTINUE
+
+
+for(let i = 1; i <= 20; i++){
+    if(i == 5){
+        console.log(`5 detected`);
+        break;
+    }
+    console.log(`The value is ${i}`);
+}
+
+
+for(let i = 1; i <= 20; i++){
+    if(i == 5){
+        console.log(`5 detected`);
+        continue;
+    }
+    console.log(`The value is ${i}`);
+}
